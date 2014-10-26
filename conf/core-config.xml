@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	
+	<!--
+		시스템에서 사용하는 언어를 설정한다.
+		예) 한국어(kr), 영어(en), 일본어(jp)
+	-->
+	<language>en</language>
+	
+	
+	<!--시스템에서 사용할 날짜(일자)에 대한 포멧을 셋팅한다.  -->
+	<format>yyyy.MM.dd</format>
+	
+	<!-- 메시지 프로퍼티 파일 경로를 설정한다. -->
+	<messageException>message/exception/messages</messageException>
+	<messageCode>message/code/messages</messageCode>
+	<messageCommon>message/common/messages</messageCommon>
+	<messageField>message/field/messages</messageField>
+	
+	<!--
+		 class name을 사용하여 새로운 인스턴스를 만드는 매니저 선택
+		 1. class = Class / 자바의 Class 에서 제공하는 newInstance, 기본값
+		 2. rasm = RASM / ReflectASM 라이브러리에서 제공하는 newInstance
+	-->
+	<configInstance>rasm</configInstance>
+	
+</config>
